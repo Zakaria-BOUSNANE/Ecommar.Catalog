@@ -8,18 +8,18 @@ using Zak.Shared.DTOs;
 
 namespace Zak.Shared.Queries;
 
-    public class GetSqauresQuery : IRequest<List<SquareDTO>?>
+public class GetSqauresQuery : IRequest<List<SquareDTO>?>
+{
+    public int Min { get; set; }
+    public int Max { get; set; }
+
+    public GetSqauresQuery(int min, int max)
     {
-        public int Min { get; set; }
-        public int Max { get; set; }
+        Min = min;
+        Max = max;
 
-        public GetSqauresQuery(int min, int max )
-        {
-            Min = min;
-            Max = max;
-
-        }
     }
+}
 
 
 

@@ -6,7 +6,7 @@ using Zak.Shared.Queries;
 
 namespace Zak.Services;
 
-public class SqauresServices: ISqauresServices
+public class SqauresServices : ISqauresServices
 {
     public async Task<List<SquareDTO>?> GetColoredSquaresAsync(int min, int max, IMediator mediator)
     {

@@ -9,7 +9,7 @@ namespace Zak.Repositories.Interfaces
 {
     public interface ISqauresRepository
     {
-       public Task<List<SquareDTO>> GetColoredSquaresAsync(int min, int max);
+        public Task<List<SquareDTO>> GetColoredSquaresAsync(int min, int max);
 
     }
 }

@@ -10,7 +10,7 @@ namespace Zak.Repositories
 {
     public class SqauresRepository : ISqauresRepository
     {
-       public async Task<List<SquareDTO>> GetColoredSquaresAsync(int min, int max)
+        public async Task<List<SquareDTO>> GetColoredSquaresAsync(int min, int max)
         {
             var squares = new List<SquareDTO>();
 
