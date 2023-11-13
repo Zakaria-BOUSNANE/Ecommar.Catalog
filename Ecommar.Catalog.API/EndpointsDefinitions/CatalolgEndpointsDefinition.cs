@@ -1,5 +1,7 @@
 ﻿using Ecommar.Catalog.Services.Interfaces;
 using Ecommar.Catalog.Shared.DTOs;
+using MediatR;
+using Microsoft.AspNetCore.Builder;
 
 namespace Ecommar.Catalog.API.EndpointsDefinitions;
 

@@ -1,5 +1,4 @@
 ﻿using Ecommar.Catalog.Shared.DTOs;
-using Ecommar.Catalog.Shared.Models;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 
