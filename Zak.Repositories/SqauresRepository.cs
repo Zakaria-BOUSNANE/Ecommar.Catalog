@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Zak.Repositories.Interfaces;
+﻿using Zak.Repositories.Interfaces;
 using Zak.Shared.DTOs;
 
-namespace Zak.Repositories
+namespace Zak.Repositories;
+public class SqauresRepository : ISqauresRepository
 {
-    public class SqauresRepository : ISqauresRepository
+    public async Task<List<SquareDTO>> GetColoredSquaresAsync(int min, int max)
     {
-        public async Task<List<SquareDTO>> GetColoredSquaresAsync(int min, int max)
+        try
         {
             var squares = new List<SquareDTO>();
 
@@ -18,7 +14,7 @@ namespace Zak.Repositories
             {
                 for (int i = min; i <= max; i++)
                 {
-                    string color = "red"; // Default color if the number is neither divisible by 3 nor by 5.
+                    string color = "red";
 
                     if (i % 3 == 0 && i % 5 == 0)
                     {
@@ -32,16 +28,17 @@ namespace Zak.Repositories
                     {
                         color = "blue";
                     }
-                    //var new square here 
 
-                    squares.Add(new SquareDTO(i, color));
+                    var squareDto = new SquareDTO(i, color);
+                    squares.Add(squareDto);
                 }
             });
-
             return squares;
         }
-
-
-
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            throw;
+        }
     }
 }

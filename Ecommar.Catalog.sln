@@ -23,13 +23,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication2", "WebAppli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zak", "WebApplication3\zak.csproj", "{E2E70BA1-2B57-4ABA-9205-1A798F8DB1A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zak.Shared", "Zak.Shared\Zak.Shared.csproj", "{93B06BE7-93FC-4422-8C2B-4CE79F1180CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zak.Shared", "Zak.Shared\Zak.Shared.csproj", "{93B06BE7-93FC-4422-8C2B-4CE79F1180CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zak.Mediator", "Zak.Mediator\Zak.Mediator.csproj", "{2F756769-244D-4722-977D-526828E872BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zak.Mediator", "Zak.Mediator\Zak.Mediator.csproj", "{2F756769-244D-4722-977D-526828E872BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zak.Repositories", "Zak.Repositories\Zak.Repositories.csproj", "{90F59FCF-9E5A-45BA-8767-70F9664B8C0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zak.Repositories", "Zak.Repositories\Zak.Repositories.csproj", "{90F59FCF-9E5A-45BA-8767-70F9664B8C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zak.Services", "Zak.Services\Zak.Services.csproj", "{31D47BD9-62DE-4B50-9E46-0EC889D8288F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zak.Services", "Zak.Services\Zak.Services.csproj", "{31D47BD9-62DE-4B50-9E46-0EC889D8288F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CA5614D-23E3-40B5-9531-2C5CBF6D6A7B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

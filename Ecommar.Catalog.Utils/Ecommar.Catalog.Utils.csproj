@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebApplication3\zak.csproj" />
+  </ItemGroup>
+
 </Project>
